@@ -10,8 +10,6 @@ class TADOrdenacao:
     def gerar_vetor(self, quantidade, tipo):
         if tipo == "aleatorio":
             self.vetor = [random.randint(1, 10000) for _ in range(quantidade)]
-        elif tipo == "crescente":
-            self.vetor = list(range(1, quantidade + 1))
         elif tipo == "decrescente":
             self.vetor = list(range(quantidade, 0, -1))
 
@@ -50,7 +48,7 @@ def main():
     print("Escolha a quantidade de valores (10, 100, 1000, 10000): ")
     quantidade = int(input())
     
-    print("Escolha o tipo de entrada (aleatorio, crescente, decrescente): ")
+    print("Escolha o tipo de entrada (aleatorio, decrescente): ")
     tipo = input()
 
     print("Escolha o algoritmo de ordenação (mergesort, quicksort, heapsort): ")
