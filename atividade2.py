@@ -123,6 +123,8 @@ def main():
     elif algorithms[algo_choice] == "radixsort":
         exec_time = sorter.radix_sort()
 
+    print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+
     print("Vetor após a ordenação:", sorter.data)
     print(f"Tempo de execução: {exec_time:.6f} segundos")
     print(f"Número de comparações: {sorter.comparisons}")
