@@ -11,7 +11,17 @@ class Sort:
         self.comparisons = 0
         self.swaps = 0
     # Implementação do algoritmo bubblesort
-    
+    def bubble_sort(self):
+        self.reset_counters()
+        start_time = time.time()
+        n = len(self.data)
+        for i in range(n):
+            for j in range(0, n-i-1):
+                self.comparisons += 1
+                if self.data[j] > self.data[j+1]:
+                    self.data[j], self.data[j+1] = self.data[j+1], self.data[j]
+                    self.swaps += 1
+        end_time = time.time()
         return end_time - start_time
     # Implementação do algoritmo quicksort
     def quick_sort(self):
