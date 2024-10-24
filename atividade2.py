@@ -1,5 +1,10 @@
 import random
 import time
+
+#Alunos:
+#Daniel Naiff da Costa
+#Lucas Correa Magno
+
 # Classe sort é responsavel por por encapsular os métodos de ordenação e os contadores de comparações e trocas
 class Sort:
     def __init__(self, data):
