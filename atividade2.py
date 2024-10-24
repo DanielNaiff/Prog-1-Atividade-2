@@ -3,7 +3,10 @@ import time
 
 #Alunos:
 #Daniel Naiff da Costa
+#202304940010
+
 #Lucas Correa Magno
+#202204940041
 
 # Classe sort é responsavel por por encapsular os métodos de ordenação e os contadores de comparações e trocas
 class Sort:
